@@ -1,0 +1,24 @@
+{
+    "name": "final_project_rest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "npm run test_unitTests_via_jasmine-node",
+        "test_unitTests_via_jasmine-node": "./node_modules/.bin/jasmine-node --matchall test",
+        "start": "npm run start_via_nodemon",
+        "start_via_nodemon": "nodemon src/main_restServer.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.4",
+        "express": "^4.16.2",
+        "jasmine": "^2.8.0",
+        "mongoose": "^4.13.7"
+    }
+}
